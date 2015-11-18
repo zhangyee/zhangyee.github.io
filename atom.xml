@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Yee的慢生活志]]></title>
+  
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://www.yeezhang.im/"/>
+  <updated>2015-11-18T03:20:24.000Z</updated>
+  <id>http://www.yeezhang.im/</id>
+  
+  <author>
+    <name><![CDATA[Yee Zhang]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[升级El Capitan后打开/存储文件时Finder的个人收藏位置消失？]]></title>
+    <link href="http://www.yeezhang.im/2015/11/18/sidebar-favorites-items-is-missing-in-osx-el-capitan/"/>
+    <id>http://www.yeezhang.im/2015/11/18/sidebar-favorites-items-is-missing-in-osx-el-capitan/</id>
+    <published>2015-11-18T01:14:07.000Z</published>
+    <updated>2015-11-18T03:20:24.000Z</updated>
+    <content type="html"><![CDATA[<p>最近才有时间升级OSX El Capitan，升级后系统响应明显提升，全屏模式下的Split View也非常适合我这样喜欢外接显示器双屏工作的人。可惜一个小小的Bug影响了使用体验：</p>
+<div class="figure " style="width:;"><img class="fig-img" src="favorites_items.png" width="" height="" alt=""></div>
+<p>如上图所示，在任意应用中，如果点击打开文件/存储为…对话框时，Finder的个人收藏位置消失了，每次都要下拉菜单去找文件夹的位置，很影响效率。</p>
+<blockquote><p>在任意应用中打开文件/存储为…，在出现对话框后，随便拖动一个文件夹到对话框的侧边栏中，并点击取消。此后再次出现这些对话框时，侧边栏的个人收藏位置就恢复为以前的设置了。<br>搜索了很久才找到这个简单又靠谱的好办法，请大家猛击下面的参考链接，去给提问者和回复者upvote吧！</p>
+<footer><strong>解决方案</strong></footer></blockquote>
+<h3 id="参考文献">参考文献</h3><p>[1] <a href="http://apple.stackexchange.com/questions/208205/file-open-dialog-is-missing-sidebar-items" target="_blank" rel="external">Ask Diferent: “File Open” dialog is missing sidebar items</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>最近才有时间升级OSX El Capitan，升级后系统响应明显提升，全屏模式下的Split View也非常适合我这样喜欢外接显示器双屏工作的人。可惜一个小小的Bug影响了使用体验：</p>
+<div class="figure " style="width:;"><img]]>
+    </summary>
+    
+      <category term="bugs" scheme="http://www.yeezhang.im/tags/bugs/"/>
+    
+      <category term="OSX" scheme="http://www.yeezhang.im/categories/OSX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[我为什么重新开始写博客？]]></title>
+    <link href="http://www.yeezhang.im/2015/09/22/Why-I-Blog/"/>
+    <id>http://www.yeezhang.im/2015/09/22/Why-I-Blog/</id>
+    <published>2015-09-22T01:31:06.000Z</published>
+    <updated>2015-09-28T09:17:01.000Z</updated>
+    <content type="html"><![CDATA[<!-- endcontent --><div class="figure figure--fullWidth"><img class="figure-img" src="openning.png" alt=""><span class="caption"></span></div><!-- content -->
+<p>上个周末花了一天多的时间搭建了这个Blog，终于把用自己域名开设博客这件事情给干起来了!</p>
+<p><code>yeezhang.im</code>域名压箱底已有多年（注册后一直没使用，白白交了很多年域名费<code>~~~~(&gt;_&lt;)~~~~</code>），很喜欢它的简洁易记，申请时就是为了开一个有个人风格的博客。无奈纠缠于各种事情，一拖再拖，直至今日……</p>
+<p>那么，在所有代码调试OK，电脑、平板、手机测试无误后，端着杯茶静坐桌前，回过头来再仔细想想，我为什么需要重新开始写博客呢？就以此，作为这个博客的开篇吧。</p>
+<h2 id="Just_For_FUN！！！">Just For FUN！！！</h2><p>没有比<code>Hexo</code>更Cool、更Geek的博客平台！如题图所示，对于一个喜爱编程的人来说，这样的架构、写作方式、发布方式实在是很吸引人，以至于我在正式用它的半年之前，就开始仔细研究它的代码和实现方式。这个博客的百度统计、多说评论与微信分享，就是我根据tranquilpeak主题的框架，自己实现的。</p>
+<ul>
+<li><h3 id="在本机生成静态文件">在本机生成静态文件</h3></li>
+</ul>
+<p>Hexo是台湾小伙伴<a href="http://hexo.io" target="_blank" rel="external">Tommy Chen</a>开发的一个基于Node.js的静态博客程序。它完全不同于我在工作中大量使用的Wordpress，更像一个在本机运行的网页模板套用工具，在本机完成写作与静态网页的自动生成，编译出来的目标文件就是一堆HTML+CSS+JS，以及图片、字体等资源。对于生成博客后的目标运行环境没有什么特殊要求（静态页面嘛），只要支持HTTP访问即可，随便什么云平台、VPS都行。</p>
+<p>它的安装也很简单，只要你有Node.j环境，5条命令即可开始体验：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install hexo-cli -g</span><br><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog </span><br><span class="line">$ npm install </span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><h3 id="像管理源代码一样同步到GitHub_Pages">像管理源代码一样同步到GitHub Pages</h3></li>
+</ul>
+<p>Hexo的魅力不止于静态网页生成，它可以根据<code>_config.yml</code>的配置，实现一键部署，除了FTP、RSync外，还支持Git。可以像我们平时做源码管理那样，将静态的博客页面push到Git的远程Repo。那么有意思的地方来了，这种方式不仅可以做博客静态页面的版本管理，更可以搭配<a href="https://pages.github.com" target="_blank" rel="external">GitHub Pages</a>和它支持的自定义域名来托管自己的博客，就像Github说的那样<code>Just edit, push, and your changes are live！</code></p>
+<p>对于我这个博客来讲，就是将域名<code>yeezhang.im</code>指向了Github上的Repo <code>https://github.com/zhangyee/zhangyee.github.io</code>，并在静态文件根目录下生成一个有自己域名的CNAME文件，实现自定义域名的配置。</p>
+<p>剩下的事情，仅是在本机浏览器确认博客的最终排版无误后，通过命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate <span class="operator">-d</span></span><br></pre></td></tr></table></figure></p>
+<p>一键生成静态页面并部署到Github上。</p>
+<ul>
+<li><h3 id="专注于文字的Markdown格式编辑">专注于文字的Markdown格式编辑</h3></li>
+</ul>
+<p>Hexo博客的撰写，是通过命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new post <span class="string">"post name"</span></span><br></pre></td></tr></table></figure></p>
+<p>来创建一个<code>post-name.md</code>，用文本编辑器打开这个<code>.md</code>文件，即可开始写作。这个文件便是Markdown格式。</p>
+<blockquote>
+<p>Markdown 是一种用来写作的轻量级「标记语言」，它用简洁的语法代替排版，而不像一般我们用的字处理软件 Word 或 Pages 有大量的排版、字体设置。它使我们专心于文字，用「标记」语法，来代替常见的排版格式，并且语法有极好的可读性。<code>.md</code>文件纯文本的格式，使用任何一个文本编辑器便可开始写作，文章完成后可以很方便地导出成HTML、PDF等其他格式。</p>
+</blockquote>
+<p>然并卵。虽然可以在Sublime Text下很方便地编辑文字，但其实我还是更习惯那种WYSIWYG的编辑方式。用Markdown编辑，需要经常“保存、切换窗口、刷新浏览器”，查看最终的效果。并且，Markdown就像一个精简版的HTML，有很多图文编辑的效果，是需要HTML+CSS配合才能实现的，在<code>.md</code>文件里没有办法控制更漂亮地显示。不过，冲着好玩嘛，也就无所谓了，也许写着写着就习惯了。</p>
+<h2 id="让自己互联网化的生活节奏慢下来">让自己互联网化的生活节奏慢下来</h2><p>当然，最重要的还是——让自己慢下来！<br>最近，好多事情都是头绪万千、梳厘不清……眼前的Todo、未来的谋划，互相牵扯，消磨掉了精力，也拖住我往前的步伐。写代码、阅读与写作，是可以让我的心情更平静的三件事儿！这半年，也一直在调整自己的状态，买了很多书，利用晚上休闲的时间干一些更积极的事。谈不上什么“星辰、大海”的征途，最近很感怀于这句：</p>
+<blockquote>
+<p><strong>一个人的战役我不怕打，我只怕配不上自己的野心，辜负了所受的历练。</strong></p>
+</blockquote>
+<p>或许这句话是对所有彷徨、失落，以及未成功想成功的人，最真实的心声。</p>
+<p><strong>谨以此作为开篇，希望我可以用这个博客记录更多今后的生活，那些我想要的生活！</strong></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<!-- endcontent --><div class="figure figure--fullWidth"><img class="figure-img" src="openning.png" alt=""><span class="caption"></span></di]]>
+    </summary>
+    
+      <category term="杂谈" scheme="http://www.yeezhang.im/categories/%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
+  
+</feed>
