@@ -6,32 +6,27 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Yee的慢生活志">
-    <title>升级El Capitan后打开/存储文件时Finder的个人收藏位置消失？ - Yee的慢生活志</title>
+    <title>如何将npm包的依赖包安装在自己的npm_modules目录？ - Yee的慢生活志</title>
     <meta name="author" content="Yee Zhang">
     
     
         <link rel="alternative" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="最近才有时间升级OSX El Capitan，升级后系统响应明显提升，全屏模式下的Split View也非常适合我这样喜欢外接显示器双屏工作的人。可惜一个小小的Bug影响了使用体验：
-
-如上图所示，在任意应用中，如果点击打开文件/存储为…对话框时，Finder的个人收藏位置消失了，每次都要下拉菜单去找文件夹的位置，很影响效率。
-在任意应用中打开文件/存储为…，在出现对话框后，随便拖动一个文件夹到对">
+    <meta name="description" content="编程洁癖癌晚期患者，绝不允许不按自己的方式生成目录!So，当我在给这个博客安装hexo-browsersync插件时，如果我用命令行1npm install hexo-browsersync --save
+虽然会在此hexo博客路径的npm_modules目录安装hexo-browsersync包，但由于hexo-browsersync的包依赖关系，同时也会在此目录下安装hexo-browsers">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="升级El Capitan后打开/存储文件时Finder的个人收藏位置消失？">
-<meta property="og:url" content="http://www.yeezhang.im/2015/11/18/sidebar-favorites-items-is-missing-in-osx-el-capitan/index.html">
+<meta property="og:title" content="如何将npm包的依赖包安装在自己的npm_modules目录？">
+<meta property="og:url" content="http://www.yeezhang.im/2015/12/15/0004-How-to-install-the-dependencies-of-a-npm-package-into-it-s-own-npm-modules/index.html">
 <meta property="og:site_name" content="Yee的慢生活志">
-<meta property="og:description" content="最近才有时间升级OSX El Capitan，升级后系统响应明显提升，全屏模式下的Split View也非常适合我这样喜欢外接显示器双屏工作的人。可惜一个小小的Bug影响了使用体验：
-
-如上图所示，在任意应用中，如果点击打开文件/存储为…对话框时，Finder的个人收藏位置消失了，每次都要下拉菜单去找文件夹的位置，很影响效率。
-在任意应用中打开文件/存储为…，在出现对话框后，随便拖动一个文件夹到对">
-<meta property="og:image" content="http://www.yeezhang.im/favorites_items.png">
-<meta property="og:updated_time" content="2015-11-18T03:20:24.000Z">
+<meta property="og:description" content="编程洁癖癌晚期患者，绝不允许不按自己的方式生成目录!So，当我在给这个博客安装hexo-browsersync插件时，如果我用命令行1npm install hexo-browsersync --save
+虽然会在此hexo博客路径的npm_modules目录安装hexo-browsersync包，但由于hexo-browsersync的包依赖关系，同时也会在此目录下安装hexo-browsers">
+<meta property="og:image" content="http://www.yeezhang.im/messy_dir.png">
+<meta property="og:image" content="http://www.yeezhang.im/clear_dir.png">
+<meta property="og:updated_time" content="2015-12-15T03:47:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="升级El Capitan后打开/存储文件时Finder的个人收藏位置消失？">
-<meta name="twitter:description" content="最近才有时间升级OSX El Capitan，升级后系统响应明显提升，全屏模式下的Split View也非常适合我这样喜欢外接显示器双屏工作的人。可惜一个小小的Bug影响了使用体验：
-
-如上图所示，在任意应用中，如果点击打开文件/存储为…对话框时，Finder的个人收藏位置消失了，每次都要下拉菜单去找文件夹的位置，很影响效率。
-在任意应用中打开文件/存储为…，在出现对话框后，随便拖动一个文件夹到对">
+<meta name="twitter:title" content="如何将npm包的依赖包安装在自己的npm_modules目录？">
+<meta name="twitter:description" content="编程洁癖癌晚期患者，绝不允许不按自己的方式生成目录!So，当我在给这个博客安装hexo-browsersync插件时，如果我用命令行1npm install hexo-browsersync --save
+虽然会在此hexo博客路径的npm_modules目录安装hexo-browsersync包，但由于hexo-browsersync的包依赖关系，同时也会在此目录下安装hexo-browsers">
     
     
     
@@ -199,19 +194,19 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            升级El Capitan后打开/存储文件时Finder的个人收藏位置消失？
+            如何将npm包的依赖包安装在自己的npm_modules目录？
         </h1>
     
     <div class="post-meta">
-    <time itemprop="datePublished" content="Wed Nov 18 2015 09:14:07 GMT+0800">
+    <time itemprop="datePublished" content="Tue Dec 15 2015 09:06:08 GMT+0800">
 	
-		    11月 18, 2015
+		    12月 15, 2015
     	
     </time>
     
         <span>in </span>
         
-    <a class="category-link" href="/categories/OSX/">OSX</a>
+    <a class="category-link" href="/categories/Coding/">Coding</a>, <a class="category-link" href="/categories/Coding/Node-js/">Node.js</a>
 
 
     
@@ -220,13 +215,14 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <p>最近才有时间升级OSX El Capitan，升级后系统响应明显提升，全屏模式下的Split View也非常适合我这样喜欢外接显示器双屏工作的人。可惜一个小小的Bug影响了使用体验：</p>
-<div class="figure " style="width:;"><img class="fig-img" src="favorites_items.png" width="" height="" alt=""></div>
-<p>如上图所示，在任意应用中，如果点击打开文件/存储为…对话框时，Finder的个人收藏位置消失了，每次都要下拉菜单去找文件夹的位置，很影响效率。</p>
-<blockquote><p>在任意应用中打开文件/存储为…，在出现对话框后，随便拖动一个文件夹到对话框的侧边栏中，并点击取消。此后再次出现这些对话框时，侧边栏的个人收藏位置就恢复为以前的设置了。<br>搜索了很久才找到这个简单又靠谱的好办法，请大家猛击下面的参考链接，去给提问者和回复者upvote吧！</p>
-<footer><strong>解决方案</strong></footer></blockquote>
-<h3 id="参考文献">参考文献</h3><p>[1] <a href="http://apple.stackexchange.com/questions/208205/file-open-dialog-is-missing-sidebar-items" target="_blank" rel="external">Ask Diferent: “File Open” dialog is missing sidebar items</a></p>
-
+            <h2 id="u7F16_u7A0B_u6D01_u7656_u764C_u665A_u671F_u60A3_u8005_uFF0C_u7EDD_u4E0D_u5141_u8BB8_u4E0D_u6309_u81EA_u5DF1_u7684_u65B9_u5F0F_u751F_u6210_u76EE_u5F55_21"><a href="#u7F16_u7A0B_u6D01_u7656_u764C_u665A_u671F_u60A3_u8005_uFF0C_u7EDD_u4E0D_u5141_u8BB8_u4E0D_u6309_u81EA_u5DF1_u7684_u65B9_u5F0F_u751F_u6210_u76EE_u5F55_21" class="headerlink" title="编程洁癖癌晚期患者，绝不允许不按自己的方式生成目录!"></a>编程洁癖癌晚期患者，绝不允许不按自己的方式生成目录!</h2><p>So，当我在给这个博客安装<code>hexo-browsersync</code>插件时，如果我用命令行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-browsersync --save</span><br></pre></td></tr></table></figure></p>
+<p>虽然会在此hexo博客路径的npm_modules目录安装<code>hexo-browsersync</code>包，但由于hexo-browsersync的包依赖关系，同时也会在此目录下安装hexo-browsersync的所有依赖包。这样的结果就是——即使package.json文件中只有几个<code>hexo-</code>前缀的依赖包，但npm_modules下却装了一堆它们各自依赖的包，既没有体现包与包的依赖关系，也看不出来自己到底安装了哪些包。当然最重要的还是……看着一堆文件目录就让人抓狂手欠😢😢😢</p>
+<div class="figure " style="width:;"><img class="fig-img" src="messy_dir.png" width="" height="" alt=""></div>
+<p>也许是关键字没用对，或者洁癖者太少，昨天Google了很久都没有找到答案，最后还是读npm help install自己解决的。</p>
+<hr>
+<h6 id="Q_uFF1A_u5982_u4F55_u5728_u5B89_u88C5npm_u9879_u76EE_u7684_u4F9D_u8D56_u5305_u65F6_uFF0C_u5C06_u8BE5_u5305_u6240_u4F9D_u8D56_u7684_u5176_u4ED6_u5305_u90FD_u5B89_u88C5_u5728_u8BE5_u5305_u81EA_u5DF1_u7684npm_modules_u76EE_u5F55_uFF0C_u800C_u4E0D_u662F_u9879_u76EE_u7684npm_modules_uFF1F"><a href="#Q_uFF1A_u5982_u4F55_u5728_u5B89_u88C5npm_u9879_u76EE_u7684_u4F9D_u8D56_u5305_u65F6_uFF0C_u5C06_u8BE5_u5305_u6240_u4F9D_u8D56_u7684_u5176_u4ED6_u5305_u90FD_u5B89_u88C5_u5728_u8BE5_u5305_u81EA_u5DF1_u7684npm_modules_u76EE_u5F55_uFF0C_u800C_u4E0D_u662F_u9879_u76EE_u7684npm_modules_uFF1F" class="headerlink" title="Q：如何在安装npm项目的依赖包时，将该包所依赖的其他包都安装在该包自己的npm_modules目录，而不是项目的npm_modules？"></a><font color="red">Q：如何在安装npm项目的依赖包时，将该包所依赖的其他包都安装在该包自己的npm_modules目录，而不是项目的npm_modules？</font></h6><h6 id="A_uFF1A_u5728_u547D_u4EE4_u540E_u52A0_u4E0A-global-style_u53C2_u6570_uFF0C_u5373_u53EF_u5B89_u88C5_u5728_u5404_u81EA_u7684_u6A21_u5757_u76EE_u5F55_u4E0B_u4E86_u3002"><a href="#A_uFF1A_u5728_u547D_u4EE4_u540E_u52A0_u4E0A-global-style_u53C2_u6570_uFF0C_u5373_u53EF_u5B89_u88C5_u5728_u5404_u81EA_u7684_u6A21_u5757_u76EE_u5F55_u4E0B_u4E86_u3002" class="headerlink" title="A：在命令后加上-global-style参数，即可安装在各自的模块目录下了。"></a><font color="green">A：在命令后加上<code>-global-style</code>参数，即可安装在各自的模块目录下了。</font></h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-browsersync -global-style --save</span><br></pre></td></tr></table></figure>
+<div class="figure " style="width:;"><img class="fig-img" src="clear_dir.png" width="" height="" alt=""></div>
+<h2 id="u795E_u6E05_u6C14_u723D_uFF0C_u6B22_u8FCE_u70B9_u8D5E_uFF01_uFF01_uFF01"><a href="#u795E_u6E05_u6C14_u723D_uFF0C_u6B22_u8FCE_u70B9_u8D5E_uFF01_uFF01_uFF01" class="headerlink" title="神清气爽，欢迎点赞！！！"></a><div align="center"><font color="green">神清气爽，欢迎点赞！！！</font></div></h2>
             
                 
 
@@ -238,7 +234,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">TAGGED IN</span><br/>
                 
-    <a class="tag tag--primary tag--small t-link" href="/tags/bugs/">bugs</a>
+    <a class="tag tag--primary tag--small t-link" href="/tags/npm/">npm</a>
 
             </div>
         
@@ -255,7 +251,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/09/22/Why-I-Blog/" data-tooltip="我为什么重新开始写博客？">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/12/10/0003-Why-I-must-crack-ChinaNet-GPON-Modem/" data-tooltip="我为什么必须要破解电信光猫？">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -265,7 +261,7 @@
     </nav>
     <ul class="post-actions post-action-share">
       
-        <li class="post-action ds-share hide-xs" data-thread-key="post-sidebar-favorites-items-is-missing-in-osx-el-capitan" data-title="升级El Capitan后打开/存储文件时Finder的个人收藏位置消失？" data-url="http://www.yeezhang.im/2015/11/18/sidebar-favorites-items-is-missing-in-osx-el-capitan/"><a class="ds-wechat post-action-btn btn btn--default" href="javascript:void(0);" data-service="wechat" title="分享微信"><i class="fa fa-weixin"></i></a></li>
+        <li class="post-action ds-share hide-xs" data-thread-key="post-0004-How-to-install-the-dependencies-of-a-npm-package-into-it-s-own-npm-modules" data-title="如何将npm包的依赖包安装在自己的npm_modules目录？" data-url="http://www.yeezhang.im/2015/12/15/0004-How-to-install-the-dependencies-of-a-npm-package-into-it-s-own-npm-modules/"><a class="ds-wechat post-action-btn btn btn--default" href="javascript:void(0);" data-service="wechat" title="分享微信"><i class="fa fa-weixin"></i></a></li>
 
 
         
@@ -289,7 +285,7 @@
         
         
             <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="post-sidebar-favorites-items-is-missing-in-osx-el-capitan" data-title="升级El Capitan后打开/存储文件时Finder的个人收藏位置消失？" data-url="http://www.yeezhang.im/2015/11/18/sidebar-favorites-items-is-missing-in-osx-el-capitan/"></div>
+<div class="ds-thread" data-thread-key="post-0004-How-to-install-the-dependencies-of-a-npm-package-into-it-s-own-npm-modules" data-title="如何将npm包的依赖包安装在自己的npm_modules目录？" data-url="http://www.yeezhang.im/2015/12/15/0004-How-to-install-the-dependencies-of-a-npm-package-into-it-s-own-npm-modules/"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
@@ -335,7 +331,7 @@ var duoshuoQuery = {
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/09/22/Why-I-Blog/" data-tooltip="我为什么重新开始写博客？">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/12/10/0003-Why-I-must-crack-ChinaNet-GPON-Modem/" data-tooltip="我为什么必须要破解电信光猫？">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -345,7 +341,7 @@ var duoshuoQuery = {
     </nav>
     <ul class="post-actions post-action-share">
       
-        <li class="post-action ds-share hide-xs" data-thread-key="post-sidebar-favorites-items-is-missing-in-osx-el-capitan" data-title="升级El Capitan后打开/存储文件时Finder的个人收藏位置消失？" data-url="http://www.yeezhang.im/2015/11/18/sidebar-favorites-items-is-missing-in-osx-el-capitan/"><a class="ds-wechat post-action-btn btn btn--default" href="javascript:void(0);" data-service="wechat" title="分享微信"><i class="fa fa-weixin"></i></a></li>
+        <li class="post-action ds-share hide-xs" data-thread-key="post-0004-How-to-install-the-dependencies-of-a-npm-package-into-it-s-own-npm-modules" data-title="如何将npm包的依赖包安装在自己的npm_modules目录？" data-url="http://www.yeezhang.im/2015/12/15/0004-How-to-install-the-dependencies-of-a-npm-package-into-it-s-own-npm-modules/"><a class="ds-wechat post-action-btn btn btn--default" href="javascript:void(0);" data-service="wechat" title="分享微信"><i class="fa fa-weixin"></i></a></li>
 
 
         
@@ -370,17 +366,17 @@ var duoshuoQuery = {
                 <div id="share-options-bar" class="share-options-bar" data-behavior="1">
     <ul class="share-options">
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://www.yeezhang.im/2015/11/18/sidebar-favorites-items-is-missing-in-osx-el-capitan/">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://www.yeezhang.im/2015/12/15/0004-How-to-install-the-dependencies-of-a-npm-package-into-it-s-own-npm-modules/">
                 <i class="fa fa-google-plus"></i><span class="">Share on Google Plus</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://www.yeezhang.im/2015/11/18/sidebar-favorites-items-is-missing-in-osx-el-capitan/">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://www.yeezhang.im/2015/12/15/0004-How-to-install-the-dependencies-of-a-npm-package-into-it-s-own-npm-modules/">
                 <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://www.yeezhang.im/2015/11/18/sidebar-favorites-items-is-missing-in-osx-el-capitan/">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://www.yeezhang.im/2015/12/15/0004-How-to-install-the-dependencies-of-a-npm-package-into-it-s-own-npm-modules/">
                 <i class="fa fa-twitter"></i><span>Share on Twitter</span>
             </a>
         </li>
