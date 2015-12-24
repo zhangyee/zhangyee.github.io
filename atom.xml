@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yeezhang.im/"/>
-  <updated>2015-12-15T03:47:23.000Z</updated>
+  <updated>2015-12-24T04:26:11.000Z</updated>
   <id>http://www.yeezhang.im/</id>
   
   <author>
@@ -13,6 +13,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Tips：关闭iOS设备静音后为什么播放视频还是有声音？]]></title>
+    <link href="http://www.yeezhang.im/2015/12/24/0005-Tips-How-to-control-the-volume-in-iOS/"/>
+    <id>http://www.yeezhang.im/2015/12/24/0005-Tips-How-to-control-the-volume-in-iOS/</id>
+    <published>2015-12-24T03:35:57.000Z</published>
+    <updated>2015-12-24T04:26:11.000Z</updated>
+    <content type="html"><![CDATA[<blockquote><p>大家有没有类似的经历：将iPhone/iPad关闭为静音后，在朋友圈点开别人发来的视频，结果音乐还是大得死人？在开会或者播放某些“小众”视频时，场面会非常尴尬……😂</p>
+</blockquote>
+<p><strong> 为什么在静音模式下仍有App会外放声音？</strong><br>其实在按音量+/-的时候如果仔细看，会发现在不同的应用中屏幕显示的调节内容是不一样的。在桌面调节的是<code>铃音</code>；而在音乐、视频、游戏中是<code>音量</code>。<br><div class="figure fig-50"><img class="fig-img" src="ringtone_volume.png" width="" height="" alt=""></div> <div class="figure fig-50"><img class="fig-img" src="speaker_volume.png" width="" height="" alt=""></div><div style="clear:both;"></div></p>
+<h1 id="u65B9_u6CD5_u4E00"><a href="#u65B9_u6CD5_u4E00" class="headerlink" title="方法一"></a>方法一</h1><p>在“设置——声音”中，关闭“用按钮调整”选项，这样侧面的音量按键就始终是调整音量了。手机铃音等提醒音，可以在这个设置拖动进度条来调整，不再根据上下文的不同一会儿调这个，一会儿调哪个了。<br><div class="figure fig-50"><img class="fig-img" src="setting_volume.png" width="" height="" alt=""></div><div style="clear:both;"></div></p>
+<h1 id="u65B9_u6CD5_u4E8C"><a href="#u65B9_u6CD5_u4E8C" class="headerlink" title="方法二"></a>方法二</h1><p>向上轻扫显示“控制中心”，拖动音量控制进度条到静音的位置，这个进度条是控制“音量”的。每次需要静音播放什么的时候，可以养成习惯确认一下“控制中心”的音量。<br><div class="figure fig-50"><img class="fig-img" src="control_center.png" width="" height="" alt=""></div><div style="clear:both;"></div></p>
+<h2 id="u53C2_u8003_uFF1A"><a href="#u53C2_u8003_uFF1A" class="headerlink" title="参考："></a>参考：</h2><p><a href="https://www.zhihu.com/question/22351319" target="_blank" rel="external">知乎：为什么 iOS 7 在静音模式下仍有应用会启动外放？</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote><p>大家有没有类似的经历：将iPhone/iPad关闭为静音后，在朋友圈点开别人发来的视频，结果音乐还是大得死人？在开会或者播放某些“小众”视频时，场面会非常尴尬……😂</p>
+</blockquote>
+<p><strong> 为什么在静音模式下仍有]]>
+    </summary>
+    
+      <category term="小贴士" scheme="http://www.yeezhang.im/tags/%E5%B0%8F%E8%B4%B4%E5%A3%AB/"/>
+    
+      <category term="铃音" scheme="http://www.yeezhang.im/tags/%E9%93%83%E9%9F%B3/"/>
+    
+      <category term="音量" scheme="http://www.yeezhang.im/tags/%E9%9F%B3%E9%87%8F/"/>
+    
+      <category term="iOS" scheme="http://www.yeezhang.im/categories/iOS/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[如何将npm包的依赖包安装在自己的npm_modules目录？]]></title>
